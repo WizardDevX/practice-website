@@ -22,7 +22,7 @@ const Nav = () => {
 		const header = document.querySelector("#header");
 
 		const io = new IntersectionObserver(
-			(entries, observer) => {
+			(entries, _) => {
 				entries.forEach(entry => {
 					if (!entry.isIntersecting) {
 						navbar?.classList.add("scrolled");

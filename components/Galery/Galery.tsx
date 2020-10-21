@@ -6,7 +6,7 @@ const Galery = () => {
 		<Container id="galery">
 			<Title>Galeria</Title>
 			<GaleryGrid>
-				{new Array(9).fill(1).map((url, idx) => {
+				{new Array(9).fill(1).map((_, idx) => {
 					return (
 						<ImgBox key={idx}>
 							<Img src={`/img/img${(idx % 6) + 1}.jpg`} />
