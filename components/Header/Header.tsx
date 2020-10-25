@@ -11,15 +11,15 @@ import {
 const Header = () => {
 	const backgrounds = [
 		{
-			title: "The technology is here",
+			title: "La tecnología esta aqui",
 			img: "/img/bg1.jpg",
 		},
 		{
-			title: "Train your mind",
+			title: "Entrena tu mente",
 			img: "/img/bg2.jpg",
 		},
 		{
-			title: "The best software",
+			title: "El mejor software",
 			img: "/img/bg3.jpg",
 		},
 	];

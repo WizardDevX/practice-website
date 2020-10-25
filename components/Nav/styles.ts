@@ -23,13 +23,22 @@ export const Navbar = styled.nav`
 	}
 `;
 
-export const Logo = styled.h2``;
+export const Logo = styled.a`
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 2rem;
+	color: ${({ theme }) => theme.colors.background};
+
+	${Navbar}.scrolled & {
+		color: ${({ theme }) => theme.colors.complement2};
+	}
+`;
 
 export const Menu = styled.ul<{ open: boolean }>`
 	position: relative;
 	display: flex;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 860px) {
 		position: fixed;
 		display: block;
 		top: 97px;
@@ -58,7 +67,7 @@ export const LinkUrl = styled.a`
 	margin: 0 15px;
 	cursor: pointer;
 
-	${mediaQuery("max", "768px")`
+	${mediaQuery("max", "860px")`
 		font-size: 2rem;
 		margin: 10px;
 	`}
@@ -67,7 +76,7 @@ export const LinkUrl = styled.a`
 export const Button = styled.div`
 	display: none;
 
-	${mediaQuery("max", "768px")`
+	${mediaQuery("max", "860px")`
 	position: relative;
 	display: flex;
 	justify-content: center;

@@ -25,6 +25,13 @@ const GlobalStyles = createGlobalStyle`
 		background-color: ${({ theme }) => theme.colors.background};
 	}
 
+	.leaflet-container {
+		margin: 4rem auto;
+		width: 80%;
+		height: 400px;
+		z-index: 1;
+	}
+
 `;
 
 const theme: DefaultTheme = {

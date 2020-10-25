@@ -9,6 +9,7 @@ const Nav = () => {
 		["Servicios", "#services"],
 		["Testimonios", "#testimonials"],
 		["Galeria", "#galery"],
+		["Contactanos", "contact"],
 	];
 
 	const [open, setOpen] = useState<boolean>(false);
@@ -47,7 +48,7 @@ const Nav = () => {
 
 	return (
 		<Navbar id="navbar">
-			<Logo>Logo</Logo>
+			<Logo href="/">Logo</Logo>
 			<Button onClick={openMenu}>
 				<Lines open={open} />
 			</Button>

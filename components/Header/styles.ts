@@ -43,15 +43,15 @@ export const ImgBox = styled.div`
 	}
 
 	&:nth-of-type(1) {
-		animation-delay: 14s;
+		animation-delay: 0s;
 	}
 
 	&:nth-of-type(2) {
-		animation-delay: 7s;
+		animation-delay: 6.5s;
 	}
 
 	&:nth-of-type(3) {
-		animation-delay: 0s;
+		animation-delay: 13.5s;
 	}
 `;
 

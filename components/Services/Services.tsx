@@ -12,7 +12,7 @@ import { FaSearch, FaCode, FaLaptopCode } from "react-icons/fa";
 const Services = () => {
 	return (
 		<Container id="services">
-			<Title>Our Services</Title>
+			<Title>Nuestros Services</Title>
 			<Text>
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 				Adipisci, officiis. Dolorum est eum doloremque neque voluptas
