@@ -135,9 +135,8 @@ export const Figure = styled.div`
 `;
 
 export const Back = styled.a`
-	position: absolute;
-	left: 14%;
-	top: 5%;
+	position: relative;
+	margin-bottom: 2rem;
 	display: flex;
 	align-items: center;
 	font-size: 1.5rem;

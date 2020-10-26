@@ -29,11 +29,11 @@ const Services = () => {
 				</Card>
 				<Card>
 					<FaSearch />
-					<CardTitle>Tools</CardTitle>
+					<CardTitle>Herramientas</CardTitle>
 				</Card>
 				<Card>
 					<FaCode />
-					<CardTitle>Code</CardTitle>
+					<CardTitle>Código</CardTitle>
 				</Card>
 			</ServicesGrid>
 		</Container>

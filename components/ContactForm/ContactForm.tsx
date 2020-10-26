@@ -18,6 +18,7 @@ import {
 import { createGlobalStyle } from "styled-components";
 import { Formik } from "formik";
 import { MdBackspace } from "react-icons/md";
+import axios from "axios";
 
 const GlobalStyle = createGlobalStyle`
 	body {
@@ -31,12 +32,12 @@ const ContactForm = () => {
 	return (
 		<>
 			<GlobalStyle />
-			<Link href="/">
-				<Back>
-					<MdBackspace /> Volver al Inicio
-				</Back>
-			</Link>
 			<Container>
+				<Link href="/">
+					<Back>
+						<MdBackspace /> Volver al Inicio
+					</Back>
+				</Link>
 				<Title>Contactanos</Title>
 				<Formik
 					initialValues={{
@@ -76,8 +77,11 @@ const ContactForm = () => {
 								"Description no debe superar 255 caracteres."
 							),
 					})}
-					onSubmit={(_, { setSubmitting }) => {
-						setSubmitting(false);
+					onSubmit={async values => {
+						await axios.post("/api/mail", {
+							form: { ...values },
+						});
+
 						router.push("/success");
 					}}>
 					{formik => (
@@ -168,7 +172,9 @@ const ContactForm = () => {
 									<Errors>{formik.errors.description}</Errors>
 								) : null}
 							</InputBox>
-							<Submit disabled={formik.isSubmitting}>
+							<Submit
+								type="submit"
+								disabled={formik.isSubmitting}>
 								Submit
 							</Submit>
 						</Form>
