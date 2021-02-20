@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import Head from "next/head";
 import { IHead } from "../interfaces";
 
-const CustomHead: FC<IHead> = ({ title = "Index Page", children }) => {
+const CustomHead: FC<IHead> = ({ title = "Techworld", children }) => {
 	return (
 		<>
 			<Head>
