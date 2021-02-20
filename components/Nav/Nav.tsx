@@ -48,7 +48,7 @@ const Nav = () => {
 
 	return (
 		<Navbar id="navbar">
-			<Logo href="/">Logo</Logo>
+			<Logo href="/">Techworld</Logo>
 			<Button onClick={openMenu}>
 				<Lines open={open} />
 			</Button>
